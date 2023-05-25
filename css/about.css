@@ -1,0 +1,137 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  position: fixed;
+  width: 100%;
+  background-color: #f8f8f8;
+  padding: 10px 0;
+  margin-top: -60px;
+}
+nav ul {
+  list-style: none;
+  margin: 7px;
+  padding: 7px;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 5px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.logo {
+  height: 110px;
+  width: 200px;
+  margin: 25px 700px -55px -10px;
+}
+
+/* About Section */
+.about {
+  padding: 50px 0;
+}
+
+.about h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 100px;
+}
+
+.about p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.container img {
+  width: 900px;
+  height: 800px;
+  border-radius: 10px;
+}
+/*hover effect*/
+
+li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: #000000;
+  margin: auto;
+  display: block;
+}
+
+li a:hover::after {
+  width: 100%;
+  transition: width 0.2s linear;
+}
+
+/* Footer */
+footer {
+  background-color: #f8f8f8;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 480px) {
+  /* Mobile Styles */
+  .logo {
+    margin: 10px auto;
+  }
+
+  .about h2 {
+    margin-top: 50px;
+  }
+
+  .container img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  /* Tablets/iPads Styles */
+  .logo {
+    margin: 10px auto;
+  }
+
+  .about h2 {
+    margin-top: 50px;
+  }
+
+  .container img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  /* Laptop Styles */
+  .logo {
+    margin: 25px 150px -55px -10px;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1204px) {
+  /* Desktop Styles */
+  .logo {
+    margin: 25px 250px -55px -10px;
+  }
+}

@@ -1,0 +1,141 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  position: fixed;
+  width: 100%;
+  background-color: #f8f8f8;
+  padding: 10px 0;
+  margin-top: -60px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 7px;
+  padding: 7px;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 5px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.logo {
+  height: 110px;
+  width: 200px;
+  margin: 25px 700px -55px -10px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.menu-item {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.menu-item:last-child {
+  border-bottom: none;
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+p {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.price {
+  display: block;
+  font-weight: bold;
+  color: #333;
+  font-size: 16px;
+  text-align: right;
+}
+
+/*hover effect*/
+
+li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: #000000;
+  margin: auto;
+  display: block;
+}
+
+li a:hover::after {
+  width: 100%;
+  transition: width 0.2s linear;
+}
+
+footer {
+  background-color: #f8f8f8;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+  /* Mobile Styles */
+  .logo {
+    margin: 10px auto;
+  }
+
+  h1 {
+    margin-bottom: 50px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .menu-item {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+  }
+
+  .price {
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  /* Tablet Styles */
+  .logo {
+    margin: 25px 150px -55px -10px;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1204px) {
+  /* Desktop Styles */
+  .logo {
+    margin: 25px 250px -55px -10px;
+  }
+}

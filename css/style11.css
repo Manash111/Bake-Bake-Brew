@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    left: 100vh;
+    top: 5vh;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    /* identical to box height */
+    color: #9B8B8B;
+    position: absolute;
+}
+
+
+
+
+img{
+    height: 99vh;
+    width: 203.5vh; 
+    margin: 0;
+    mix-blend-mode: multiply;
+    object-fit: cover;
+
+}
+
+span{
+/* Bake & BrewMade with Love. */
+       
+    position: absolute;
+    width: 800  px;
+    height: 500px;
+    left: 600px;
+    top: 200px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 100px;
+    text-align: center;
+    
+    color: #9B8B8B;
+}
