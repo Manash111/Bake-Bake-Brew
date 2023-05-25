@@ -47,7 +47,7 @@ nav ul li a {
 
 /* Hero Section */
 .hero {
-  background-image: url("/images/wepik-export-20230523152352tLjT.png");
+  background-image: url("../images/wepik-export-20230523152352tLjT.png");
   background-size: cover;
   background-position: center;
   height: 765px;
